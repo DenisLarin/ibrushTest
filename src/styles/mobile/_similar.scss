@@ -9,6 +9,7 @@
     &__item{
       width: 33.3%;
       float: left;
+      transition: all 0.3s;
     }
     &__inner{
       display: block;
@@ -18,6 +19,9 @@
       width: 100%;
       text-align: center;
       margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     &__dot{
       width: 10px;
@@ -26,6 +30,8 @@
       background-color: #cccccc;
       display: inline-block;
       margin-right: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
       &:last-child{
         margin-right: 0;
       }
