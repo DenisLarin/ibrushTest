@@ -1,0 +1,119 @@
+.header__title {
+  text-align: center;
+  margin-top: 85px;
+
+  .title {
+    font-size: 48px;
+    color: #0062ff;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 80px;
+
+    &:after, &:before {
+      content: '';
+      display: inline-block;
+      width: 145px;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      background-color: black;
+    }
+
+    &:after {
+      right: -30px;
+      transform: translate(100%, -50%);
+    }
+
+    &:before {
+      transform: translate(-100%, -50%);
+      left: -30px;
+    }
+  }
+}
+
+.books {
+  &__image {
+    position: relative;
+    margin-bottom: 20px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 14px solid #fff;
+      bottom: 3px;
+      left: 10%;
+    }
+  }
+
+  &__date {
+    position: absolute;
+    top: 5%;
+    left: 2.8%;
+    width: 120px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'merriweatherregular', sans-serif;
+    font-size: 24px;
+    border: 1px solid #ffffff;
+    .date {
+      position: relative;
+
+      &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+        border-left: 7px solid #000;
+        position: absolute;
+        top: 50%;
+        right: -20px;
+        transform: translateY(-50%);
+      }
+    }
+
+    .month {
+      font-size: 16px;
+    }
+  }
+
+  &__text {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+  }
+}
+
+.quote {
+  &__icon {
+    width: 34px;
+    height: 34px;
+    margin-right: 30px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 45px;
+    font-family: 'SegoeUI-Italic', sans-serif;
+    font-size: 18px;
+  }
+
+  &__author {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #777777;
+    &:before{
+      content: "— ";
+    }
+  }
+}

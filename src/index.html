@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frontend test task</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="wrapper">
+            <div class="header__title">
+                <h1 class="title">Путь JavaScript</h1>
+            </div>
+            <div class="books">
+                <div class="books__image">
+                    <img src="./images/books.png" alt="">
+                    <div class="books__date">
+                        <span class="date">12</span>
+                        <span class="month">апреля</span>
+                    </div>
+                </div>
+                <div class="books__text">Можно выделить три основных направления для прогресса JavaScript</div>
+            </div>
+            <div class="breakLine"></div>
+            <div class="quote">
+                <div class="quote__title">
+                    <h2 class="title">Серверный JavaScript</h2>
+                </div>
+                <div class="quote__wrapper">
+                    <img class="quote__icon" src="./images/quotation-mark.png">
+                    <div class="quote__contentWrapper">
+                        <div class="quote__content">Разработчики и клиенты часто неправильно понимают, что такое
+                            система.
+                            Они
+                            видят графический интерфейс и думают, что он и есть система. Они определяют систему в
+                            терминах
+                            графического интерфейса и считают, что должны сразу начать работу с графическим интерфейсом.
+                            Они
+                            не
+                            понимают важнейшего принципа: ввод/вывод не важен.
+                        </div>
+                        <div class="quote__author">Р. Мартин</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="banner page page_gray ">
+    <div class="wrapper">
+        <p class="banner__link">Реклама на <a href="blabla.com">blabla.com</a></p>
+        <picture class="banner__image">
+            <source srcset="./images/banner_mobile.png" media="(max-width: 767px)">
+            <img src="./images/banner_PC.png" alt="bannerPC">
+        </picture>
+    </div>
+</div>
+<div class="conclusion page">
+    <div class="wrapper">
+        <h2 class="title conclusion__title">Заключение</h2>
+        <p class="conclusion__content">Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство
+            диссонирует лирический субъект. Абстрактное высказывание пространственно просветляет деструктивный символ.
+            Ямб, несмотря на то, что все эти характерологические черты отсылают не к единому образу нарратора,
+            интегрирует мифопоэтический хронотоп. Действительно, ударение приводит палимпсест. Контрапункт приводит
+            ритм.
+        </p>
+    </div>
+</div>
+<div class="rate page page_gray">
+    <div class="wrapper">
+        <h3 class="title rate__title">Оцените статью</h3>
+        <div class="stars">
+            <span class="stars__item checked">☆</span>
+            <span class="stars__item checked">☆</span>
+            <span class="stars__item checked">☆</span>
+            <span class="stars__item checked">☆</span>
+            <span class="stars__item">☆</span>
+        </div>
+        <div class="comment">
+            <h3 class="title comment__title">Добавить комментарий к книге</h3>
+            <form class="commentForm">
+                <div class="commentForm__inputs">
+                    <div class="commentForm__item commentForm__item_withData">
+                        <input type="text" class="input" id="name" value="Александр">
+                        <label for="name">Имя</label>
+                    </div>
+                    <div class="commentForm__item">
+                        <input type="text" class="input" id="email">
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div class="commentForm__item">
+                        <div class="select-box">
+                            <div class="select-box__options">
+                                <div class="option">
+                                    <input type="radio" class="radio" id="1" name=""/>
+                                    <label for="1">JavaScript ниндзя</label>
+                                </div>
+
+                                <div class="option">
+                                    <input type="radio" class="radio" id="2" name=""/>
+                                    <label for="2">Pragmatic Guide to JavaScript</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" id="3" name=""/>
+                                    <label for="3">Pro JavaScript Techniques</label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" class="radio" id="4" name=""/>
+                                    <label for="4">Выразительный JavaScript</label>
+                                </div>
+                            </div>
+                            <div class="selected">
+                                Выберите книгу
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <textarea placeholder="Ваш отзыв" class="commentForm__feedback"></textarea>
+
+                <button type="submit" class="commentForm__submit">отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+<footer class="similar page">
+    <div class="wrapper">
+        <h2 class="title similar__title">Похожие посты</h2>
+        <div class="posts">
+            <div class="posts__wrapper">
+                <div class="posts__overflow">
+                    <div class="posts__inner">
+                        <div class="posts__item">
+                            <picture class="posts__image">
+                                <source srcset="./images/react.png" media="(max-width: 767px)">
+                                <img src="./images/react.png" alt="">
+                            </picture>
+                            <h3 class="title posts__header">События жизненного цикла ReactJS</h3>
+                        </div>
+                        <div class="posts__item">
+                            <picture class="posts__image">
+                                <source srcset="./images/grids.png" media="(max-width: 767px)">
+                                <img src="./images/grids.png" alt="">
+                            </picture>
+                            <h3 class="title posts__header">CSS Grids. Полное руководство</h3>
+                        </div>
+                        <div class="posts__item">
+                            <picture class="posts__image">
+                                <source srcset="./images/async.png" media="(max-width: 767px)">
+                                <img src="./images/async.png" alt="">
+                            </picture>
+                            <h3 class="title posts__header">Асинхронность в JavaScript</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="posts__dots">
+                    <span class="posts__dot posts__dot_isActive_true"></span><span class="posts__dot"></span><span class="posts__dot"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+@media screen and (max-width:  767px) {
+  .header__title {
+    .title {
+      font-size: 24px;
+      &:before, &:after {
+        width: 20px;
+      }
+      &:before{
+        left: -20px;
+      }
+      &:after{
+        right: -20px;
+      }
+    }
+  }
+  .books{
+    display: flex;
+    flex-direction: column-reverse;
+    &__text{
+      margin-bottom: 20px;
+    }
+    &__image{
+      overflow-x: scroll;
+      &:after{
+        display: none;
+      }
+      img{
+        width: 738px;
+        height: auto;
+        margin-bottom: 13px;
+      }
+    }
+  }
+  .breakLine{
+    display: none;
+  }
+}

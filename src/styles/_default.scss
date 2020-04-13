@@ -1,0 +1,57 @@
+@import "fonts";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input, select{
+  border: 0;
+  display:inline-block;
+  &:focus{
+    outline: none;
+  }
+}
+select{
+  appearance: none;
+}
+
+.title{
+  font-family: 'consolas', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+header, footer, .page {
+  width: 100%;
+}
+.page{
+  .wrapper{
+    padding: 35px 15px;
+  }
+}
+.page_gray{
+  background-color: #ededed;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1170px;
+  padding:  0 15px 85px 15px;
+  margin: 0 auto;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+.line{
+  width: 100%;
+  height: 1px;
+}
+.breakLine{
+  width: 100%;
+  height: 1px;
+  background-color: #454a52;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}

@@ -1,0 +1,14 @@
+@media screen and (max-width:  767px){
+  .commentForm{
+    &__inputs{
+      flex-direction: column;
+    }
+    &__item{
+      margin-bottom: 15px;
+      width: 100%;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
