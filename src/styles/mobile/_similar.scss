@@ -9,7 +9,11 @@
     &__item{
       width: 33.3%;
       float: left;
-      transition: all 0.3s;
+      transition: transform 0.3s;
+      opacity: 0;
+      &.active{
+        opacity: 1;
+      }
     }
     &__inner{
       display: block;

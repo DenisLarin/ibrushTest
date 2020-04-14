@@ -28,7 +28,9 @@ const onDotClick = (dot, index) => {
     dot.classList.add('posts__dot_isActive_true');
     postItems.forEach(item => {
         item.style.transform = `translateX(-${100 * index}%)`
+        item.classList.remove('active');
     });
+    postItems[index].classList.add('active')
 }
 
 //scroll
@@ -99,8 +101,8 @@ const scrollDynamicInit = () => {
     let previousX = undefined;
     let scrollPX = 0;
 }
-
-scrollDynamicInit();
+if (window.innerWidth <= 767)
+    scrollDynamicInit();
 
 const debounce = (func, wait, immediate, lock) => {
     var timeout;
